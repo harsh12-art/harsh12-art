@@ -1,1 +1,3 @@
-
+let age = 65;
+let result = (age >= 0) ? (age >= 60 ? "Eligible for Senior Discount" : "Not Eligible for Senior Discount") : "Invalid Age";
+console.log(result);
