@@ -1,1 +1,10 @@
+function price(){
+let classification = (price >= 1000) ? "Expensive" :
+                    (price >= 500 && price <= 999) ? "Moderate" :
+                    (price > 0 && price < 500) ? "Affordable" :
+                    (price === 0) ? "Free" :
+                    (price < 0) ? "Invalid Price" : "";
 
+console.log(classification);
+}
+price(750,0);
