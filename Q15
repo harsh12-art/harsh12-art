@@ -1,0 +1,18 @@
+let sentenceBuilder={
+   subject:"I",
+   verb:"am",
+   object:"coding", 
+     buidSentence:function(){
+             return this.subject+" "this.verb+" "+verb.object
+          },
+    updateproperty:function(property,value){
+      this[property]=value
+}
+};
+let sentence1=sectenceBullder.buildsentence();
+console.log(senence1)
+sentenceBuilder.updateProperty("subject","He");
+sentenceBuilder.updateProperty("verb","is");
+
+let sentence2= sentenceBuilder.builSentence()'
+console.loog(sentence2);
