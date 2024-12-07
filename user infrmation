@@ -1,0 +1,31 @@
+const user = {
+    id: 123,
+    profile: {
+        name: "John Doe",
+        address: {
+            city: "Los Angeles",
+            zipcode: "90001"
+        }
+    }
+};
+const getUserInfo = (user) => {
+    const {
+        id,
+        profile: {
+            name = "Information not available",
+            address: {
+                city = "Information not available",
+                zipcode = "Information not available"
+            } = {}
+        } = {}
+    } = user;
+   return `User ${name} (ID: ${id}) lives in ${city} (ZIP: ${zipcode})`;
+};
+console.log(getUserInfo(user));
+const userWithMissingFields = {
+    id: 123,
+    profile: {
+        name: "John Doe"
+    }
+};
+console.log(getUserInfo(userWithMissingFields));
